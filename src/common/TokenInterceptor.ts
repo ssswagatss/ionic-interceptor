@@ -12,7 +12,7 @@ export class TokenInterceptor implements HttpInterceptor {
     intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
         request = request.clone({
             setHeaders: {
-                AccessToken: `ztNXwKWdzy-EhsxRqJcG7Z1r9CdBNbN-04IwSW_t-HCrjilsQF4ZkUaNZLa3c3DAHHrxvpvVLimDw7UZVMbN_HPQXMw6LirgySGKAnV1Dx4trQOGHYQ2Hk6o0gu7ztEKNPSTko7X2paERIITcKU86jcgHpVqIiESbwYLGn4Kw52VgQO5SKswQObEigvZfp7bbvBByisqyaS8x3WNtd_fql78eIpAX_iDfJsEsq13euPa3XTfEku-JNN7wMo-zd55EaW1EykKAwH2TdZAXXWivh4BReCb1W3gH4Z_DfGNo4g-JEDNRutI47MIkO9fZt751Y1qTCyYOnXbRr_HgStoQ12cIASdKZmbB-kOg2wfsJg4fwHSdErp7ZW3_k1LLeWSzBeveNiIaQDJyuZ9puRLgpQRN1ADHZ2v0NNzf7FUezuzcq-OVR_lFfgxHxdJKrtM2DiPu8BkMeWiG08zlInlGDxUnALPtGmVY5O72adCNiXUVOQzceM3P8ohDunlc89k6eUfCdCvKMtwyo5SLUsDC9R6TxCFbUyKKOJ71sz2FTMYyoA8MwM9b6EjCEPydPZQMY-KqydOUIlRMO8pZLrHRwe6rTabIIcTy3G-A0WoWkQ`
+                Authorization: `Bearer 4TLpIt7BoDEzomFNgKwdha6SEx6Stt-zkJzb-jGwKdW5TYE3WE_nIlSSvzz_1DGAcAZEYY2FWbCE_tZiXTTkChTtfn_Uls8Ej3-abV3g99q-TVcNrtzkfKe-MVZwYFyIhR_DKfAw05pt5wQ9mYt89CWPRveg_oE3bn_EujAA8kFn9JY179qQaLc5hXmLNFafaXUr4Qgnyr9L1Hl9jVuM6lZIYA7wsKjg8UiJiKIDz5dumhpifE8bdze-Ts3iMcMl-SzjuNJWp0ZEkJBVa-VwWLa9l6oBoZM_cmz-elDa_0lZkrjQXvP7uYZ6GpCGRqb_lO8lpaV0IPpt4p7QzrqkZjCNxFWbrT6Apj18DAynZgywP0ksRqUCN63A-x_svJ_e4Wu1oFs6S6EFFjENIxJQBx1emPpkSwfJEQxm0BNIo4Wv-PetMbvjl2_YEzOp4aW89HDXTYW_38y6-OuI3TK3tBnM5jHBE8y4wQWX5Evcw6s`
             }
         });
         return next.handle(request);

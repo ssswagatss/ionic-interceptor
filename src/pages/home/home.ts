@@ -9,7 +9,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class HomePage {
   message: string = "Hello and welcome";
   constructor(public navCtrl: NavController, public http: HttpClient) {
-    this.http.get('http://ionicmobile.azurewebsites.net/api/Project/GetProjectByUserId?UserId=552383dc-cf67-4a3b-b154-899f702757a0')
+    this.http.get('http://localhost:62543/api/values')
       .subscribe(
       data => console.log("Data", data),
       err => console.log("Error", err)
